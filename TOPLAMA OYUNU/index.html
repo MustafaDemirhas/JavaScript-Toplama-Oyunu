@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       /*
+        let islighton = true ;
+        let israining = false;
+        let ishungry = false ;
+        let isMarried = true;
+        let truvalue = 4 > 3;
+        let flaseValue = 4< 3 ;
+        let firstName ;//UNDİFEİNED 
+        */
+
+        
+        confirm("OYUNDA -10 PUANA DÜŞERSENİZ OYUN BİTER \n 50 PUAN ALIRSANIZ KAZANIRSINIZ ");
+         let puan = 0;
+            for(let i = 0 ; puan >-10; i++  )                 {
+                let   a=  Math.floor(Math.random() * 100);
+                let   b = Math.floor(Math.random() * 100) ; 
+        let player1 = parseInt(prompt(`${a} + ${b} = ?`,));
+        let c = a + b ;
+        if(player1 !== c) 
+         { 
+             alert("cevap yanlış");
+             puan = puan - 5;            
+            alert("puanınız" + " " + puan)
+            if (puan === -10) {
+                alert("maalesef kaybettiniz");       
+                              }
+         }
+        if( player1 === c )
+         {
+
+            alert("cevap doğru");
+            puan = puan + 5;            
+            alert("puanınız" + " " + puan)
+           
+           if (puan === 50 )  {
+            alert("tebrikler oyunu kazandınız");
+            puan = - 10 ;   
+                              }      
+        }
+                                                                    }
+
+    
+    </script>
+   
+</body>
+</html>
